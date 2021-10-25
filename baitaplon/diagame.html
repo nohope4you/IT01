@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>50shine</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="dathang.js"></script>
+        <link rel="stylesheet" href="trangchu.css"/>
+        <link rel='shortcut icon' href='https://findicons.com/files/icons/2792/hex_icons/128/anomaly_korea.png' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body onload="inits()">
+        <nav>
+            <ul class="menuf">
+                <li><a href="index.html"><span class="fa fa-home"> Trang chủ</span></a></li>
+                <li><a href="maygame.html"><span class="fa fa-gamepad"> Máy Game</span></a></li>
+                <li><a href="diagame.html"><span class="fa fa-bandcamp"> Đĩa Game</span></a></li>
+                <li><a href="dathang.html"><span class="fa fa-clipboard"> Đặt hàng</span></a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="go">
+                <button onclick="gototop()"><img height="70px" src="https://png.pngtree.com/png-vector/20190418/ourlarge/pngtree-vector-up-arrow-icon-png-image_951453.jpg">Go to top</button>
+            </div>
+            <img width="100%" src="https://file.hstatic.net/1000231532/collection/mua_game_nintendo_switch_hcm_nshop_bb7d98d79bd94d1f8fe10c22da384175.jpg" >
+            <div class="giohang" id="giohang1">
+                <div></div>
+                <div class="giohangbody">
+                      <div class="giohangbody1">
+                          <div>Sản Phẩm</div>
+                          <div>Tên Sản Phẩm</div>
+                          <div>Giá</div>
+                      </div>
+                      <div class="giohangbody1" id="giohang2">
+                          <img class="hinhsanpham" width="100" height="100" src="maygame1.jpg">
+                          <div id="ten"></div>
+                          <div id="gia"></div>
+                      </div>
+                      <div class="total">
+                          <div>Tổng cộng :</div>
+                          <div>0 đ</div>
+                      </div>
+                      <div class="chot">
+                          <button id="closefooter">Đóng</button>
+                          <button id="order">Thanh toán</button>
+                      </div>
+                </div>
+                </div>
+        </header>
+        <h1 class="td"><span class="fa fa-bars"></span>Đĩa game</h1>
+        <section>
+            <div class="itemn">
+                    <div class="cardt">
+                        <div>
+                        <img width="100%" onclick="thongbao(this)" style="margin-top: 10px;" src="diagames1.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">SW246 - SAMURAI WARRIORS 5 CHO NINTENDO SWITCH</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,100,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay">Samurai Warriors 5 bao gồm cả phần cốt truyện hoàn toàn mới, thiết kế lại nhân vật từ đầu cũng như phong cách đồ họa chi tiết đẹp mắt hơn. Tựa game đưa người chơi đến thời chiến quốc ở Nhật Bản phong kiến với hai nhân vật trung tâm rực sáng là đại tướng quân Nobunaga Oda và Mitsuhide Akechi. Bối cảnh diễn ra ở giai đoạn sau của cuộc nội chiến 1467 đến năm 1477.</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/skgIyOdyzaE" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm1">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="100%" onclick="thongbao(this)" style="margin-top: 15px;" src="diagames2.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">DRAGON BALL Z KAKAROT + A NEW POWER AWAKENS SET</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,250,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay">Nội dung của Dragon Ball Z Kakarot + A New Power Awakens Set cho Nintendo Switch xoay quanh giai đoạn Goku đã lớn và chiến đấu với nhiều đối thủ mạnh từ khắp vũ trụ. Trò chơi là sự kết hợp giữa thể loại nhập vai với song đấu 3D, rất được fan tán thưởng. Bạn có thể làm nhiều thứ hơn ngoài việc thư hùng với kẻ địch như câu cá, sưu tập ngọc, ăn uống, lái xe bay đi dạo xung quanh, luyện tập, thăng cấp... Khám phá thế giới trong game, thực hiện nhiệm vụ phụ là một điều thú vị.</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/BCqSFITX6kI" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathang1" onclick="thongbao(this)">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="60%" onclick="thongbao(this)" style="margin-top: 10px; margin-left: 125px;" src="diagame2.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">THE LEGEND OF ZELDA SKYWARD SWORD HD CHO NDS</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,380,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay">Vung thanh kiếm của bạn để hạ gục đối phương bằng tính năng cảm biến chuyển động thực tế với cặp Joy-con của Nintendo Switch! Link sẽ thực hiện đúng các góc chém khi bạn sử dụng Joy-con, giúp cho bạn tận hưởng trải nghiệm thực tế nhất của các trận chiến. Các chuyển động cũng mượt mà hơn nhờ vào hệ thống của Nintendo Switch và đồ họa HD.</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/r7qozxgX4c8" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathang1" onclick="thongbao(this)">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="100%" onclick="thongbao(this)" style="margin-top: 15px;" src="diagames3.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">MONSTER HUNTER STORIES 2 WINGS OF RUIN CHO NDS</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,380,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay">Sau khi Rathalos biến mất khỏi thế giới, bạn sẽ vào vai một Monster Rider trẻ tuổi, cháu của Rider Red lừng lẫy. Cùng với Wyverian Ena bí ẩn và Navirou, anh hùng Felyne tự phong, người chơi dấn thân vào một chuyến phiêu lưu đến nhiều địa điểm rộng mở. Trong chuyến đi, bạn sẽ ấp nở, huấn luyện, và chung sống với nhiều quái vật mạnh mẽ nhưng cũng rất dễ thương. Tất nhiên không hề thiếu các đồng đội lẫn kẻ địch, thử thách mới trên đường làm sáng tỏ lời sấm truyền xoay quanh Wings of Ruin.</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/LzkTvF0XDXg" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathang1" onclick="thongbao(this)">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="100%" onclick="thongbao(this)" style="margin-top: 10px;" src="diagames4.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">MARIO GOLF SUPER RUSH CHO NINTENDO SWITCH</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,350,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay">Mario Golf Super Rush đang bán ở nShop hỗ trợ chơi cùng lúc tối đa 4 người, cả offline lẫn online. Giải đấu golf của Vương Quốc Nấm chắn chắn sẽ rất sôi động với nhiều chế độ chơi từ Standard Golf (dạng truyền thống), đến Speed Golf (vừa đua vừa đánh), và cả phần cốt truyện phiêu lưu riêng mang yếu tố game nhập vai cực kỳ được trông đợi.</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/5R-EuaUbPvc" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathang1" onclick="thongbao(this)">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="100%" onclick="thongbao(this)" style="margin-top: 15px;" src="diagames5.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">DISGAEA 6 DEFIANCE OF DESTINY CHO NDS</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,350,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay">Disgaea 6: Defiance of Destiny có cốt truyện vô cùng kịch tính với nhân vật chính là Zed - một zombie đã tái sinh nhiều lần ở những thế giới khác nhau để vượt qua God of Destruction - Thần hủy diệt đang đe dọa tất cả loài quỷ. Bạn sẽ có cơ hội chạm trán nhiều nhân vật trong các thế giới mà bạn tái sinh. Hãy đi khắp nơi tìm kiếm sức mạnh, chiêu mộ thêm thành viên để đánh bại God of Destruction.</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/XjBaj3He_ww" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathang1" onclick="thongbao(this)">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="100%" onclick="thongbao(this)" style="margin-top: 10px;" src="diagames6.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">HADES CHO NINTENDO SWITCH</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,080,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay"> Là một Hoàng Tử Cõi Chết bất tử, bạn sẽ sở hữu nhiều sức mạnh và vũ khí thần thánh của Olympus để bức phá ra khỏi những xiềng xích của chính Thần Chết, càng thử nhiều càng mạnh, và mỗi lần đào tẩu được xa hơn, câu chuyện lại mở ra nhiều điều hơn.</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/mD8x5xLHRho" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathang1" onclick="thongbao(this)">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="100%" onclick="thongbao(this)" style="margin-top: 20px;" src="diagames7.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">NINJA GAIDEN MASTER COLLECTION CHO N</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,200,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay">Gaiden Sigma 2 phát hành năm 2009 tiếp tục nối dài chuyến hành trình của Hayabusa bên cạnh các nhân vật Ayane, Rachel, và Momiji. Với 4 độ khó khác nhau thử thách kỹ năng của người chơi, game sẽ khiến tim bạn đạp nhanh hơn khi vào trận chiến. Phần cuối cùng, Ninja Gaiden 3 Razor’s Edge ra mắt năm 2012 chứa đầy những kẻ địch vô cùng mạnh, và đưa Kasumi đến với các fan.</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/ENWYtojebp8" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathang1" onclick="thongbao(this)">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="100%" onclick="thongbao(this)" style="margin-top: 40px;" src="diagames8.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">PERSONA 5 STRIKERS CHO NINTENDO SWITCH</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1,350,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Cốt truyện :</h6><div class="ttmay">Nội dung của game bắt đầu khi nhóm Phantom Thieves lên đường đi nghỉ dưỡng thì nhận được đề nghị trợ giúp từ một thám tử Kyoto về việc điều tra chuỗi hiện tượng bất thường khắp Nhật Bản... nếu không thì anh ta sẽ bắt Joker. Đào sâu vào những bí ẩn đó, họ khám phá ra một không gian khác, nơi người vô tội bị giam và tước đoạt những khát khao của con tim. Phantom Thieves sẽ làm tất cả để giải thoát mọi người...</div>
+                                </li>
+                                <li>
+                                    <h6>Trailer :</h6><div class="ttmay"><iframe width="400" height="200" src="https://www.youtube.com/embed/lUqJo04jLEA" frameborder="0" allowfullscreen></iframe></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathang1" onclick="thongbao(this)">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <footer>
+            <div class="foot">
+                <div>
+                    <ul>
+                        <li>Trường Đại học Mở TP.HCM</li>
+                        <li> Địa chỉ : 371 Nguyễn Kiệm Gò Vấp P.3 Quận Gò Vấp TP.Hồ Chí Minh</li>
+                        <li>E-mail:skullir4@gmail.com</li>
+                        <li>Hotline :0123456789</li>
+                    </ul>
+                </div>
+                <div> 
+                    <ul>
+                        <li>Kết nối với chúng tôi qua :</li>
+                        <li><img height="50px" src="https://yogadaily.com.vn/wp-content/uploads/2018/06/fb-icon.png"></li>
+                    </ul>
+                </div>
+                <div> 
+                    <ul>
+                        <li>Nhà tài trợ :</li>
+                        <li>Nguyễn Văn A</li>
+                        <li>Nguyễn Văn B</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

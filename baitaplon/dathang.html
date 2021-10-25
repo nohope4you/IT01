@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>50shine</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="dathang.js"></script>
+        <link rel="stylesheet" href="trangchu.css"/>
+        <link rel='shortcut icon' href='https://findicons.com/files/icons/2792/hex_icons/128/anomaly_korea.png' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+            <ul class="menuf">
+                <li><a href="index.html"><span class="fa fa-home"> Trang chủ</span></a></li>
+                <li><a href="maygame.html"><span class="fa fa-gamepad"> Máy Game</span></a></li>
+                <li><a href="diagame.html"><span class="fa fa-bandcamp"> Đĩa Game</span></a></li>
+                <li><a href="dathang.html"><span class="fa fa-clipboard"> Đặt hàng</span></a></li>
+            </ul>
+        </nav>
+        <header>
+            <img width="100%" src="https://lh3.googleusercontent.com/proxy/LLYQxAHbb462bIdCcmt8JLvANo2RNJkkfgci3fwtn2lq4OLeDm1E6P69wH664LvJdNFpvZPVPV8bCLpivWLfOi4mDCeOMx4IFl-B37j5lDYGwYNfHAxrF_t4wCN3ipW-McrwvLrkcETw5j8">
+        </header>
+        <h1 class="td"><span class="fa fa-bars"></span>Đặt hàng</h1>
+        <section>
+            <h4>Thông tin khách hàng</h4>
+            <div class="chinhtrang">
+                <div class="hoadon">
+                    <ul class="hoadon1">
+                        <li>
+                            <div class="khoangtrong">
+                                <span>Họ và tên : </span> 
+                                <input type="text" placeholder="VD : Nguyễn Văn A" class="textbox" id="hoten">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="khoangtrong1">
+                                <span>Số điện thoại :</span> 
+                                <input type="text" placeholder="VD : 09856321505" class="textbox" id="hoten">
+                                <a> Nhân viên sẽ liên lạc với khách hàng để xác nhận đơn hàng</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="khoangtrong">
+                                <span>E-mail :  </span> 
+                                <input type="text" placeholder="VD : nguyenvana21@gmail.com" class="textbox" id="hoten">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="khoangtrong">
+                                <span>Tỉnh thành : </span> 
+                                <input type="text" placeholder="VD : Hồ Chí Minh" class="textbox" id="hoten">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="khoangtrong">
+                                <span>Quận huyện :  </span> 
+                                <input type="text" placeholder="VD : Quận Gò Vấp" class="textbox" id="hoten">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="khoangtrong">
+                                <span> Phường xã : </span> 
+                                <input type="text" placeholder="VD : Phường 3" class="textbox" id="hoten">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="khoangtrong">
+                                <span>Địa chỉ :</span> 
+                                <input type="text" placeholder="VD : 371 Nguyễn Kiệm" class="textbox" id="hoten">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="khoangtrong">
+                                <span>Ghi chú :</span> 
+                                <input type="text" placeholder="VD : Màu sắc , thời gian ,....." class="textboxgc">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="dhang" id="xacnhan" onclick="xacnhandonhang()">Xác nhận đặt hàng</div>
+                </div>
+                <div class="thongtindonhang">
+                    <ul>
+                        <li>
+                            <h4>Thông tin đơn hàng</h4> 
+                        </li>
+                        <li>
+                            <img id="hinhanh" >
+                        </li>
+                        <li>
+                            <div>Số tiền : </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="foot">
+                <div>
+                    <ul>
+                        <li>Trường Đại học Mở TP.HCM</li>
+                        <li> Địa chỉ : 371 Nguyễn Kiệm Gò Vấp P.3 Quận Gò Vấp TP.Hồ Chí Minh</li>
+                        <li>E-mail:skullir4@gmail.com</li>
+                        <li>Hotline :0123456789</li>
+                    </ul>
+                </div>
+                <div> 
+                    <ul>
+                        <li>Kết nối với chúng tôi qua :</li>
+                        <li><img height="50px" src="https://yogadaily.com.vn/wp-content/uploads/2018/06/fb-icon.png"></li>
+                    </ul>
+                </div>
+                <div> 
+                    <ul>
+                        <li>Nhà tài trợ :</li>
+                        <li>Nguyễn Văn A</li>
+                        <li>Nguyễn Văn B</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

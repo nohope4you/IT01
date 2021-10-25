@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>50shine</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="dathang.js"></script>
+        <link rel="stylesheet" href="trangchu.css"/>
+        <link rel='shortcut icon' href='https://findicons.com/files/icons/2792/hex_icons/128/anomaly_korea.png' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body onload="init()">
+        <nav>
+            <ul class="menuf">
+                <li><a href="index.html"><span class="fa fa-home"> Trang chủ</span></a></li>
+                <li><a href="maygame.html"><span class="fa fa-gamepad"> Máy Game</span></a></li>
+                <li><a href="diagame.html"><span class="fa fa-bandcamp"> Đĩa Game</span></a></li>
+                <li><a href="dathang.html"><span class="fa fa-clipboard"> Đặt hàng</span></a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="go">
+                <button onclick="gototop()"><img height="70px" src="https://png.pngtree.com/png-vector/20190418/ourlarge/pngtree-vector-up-arrow-icon-png-image_951453.jpg">Go to top</button>
+            </div>
+            <img width="100%" src="https://file.hstatic.net/1000231532/collection/mua_may_game_nintendo_switch_hcm_nshop_dbb5012b1454458e946f4bcccf515c2c.jpg" >
+            <div class="giohang" id="giohang1">
+                <div></div>
+                <div class="giohangbody">
+                      <div class="giohangbody1">
+                          <div>Sản Phẩm</div>
+                          <div>Tên Sản Phẩm</div>
+                          <div>Giá</div>
+                      </div>
+                      <div class="giohangbody1" id="giohang2">
+                          <img class="hinhsanpham" width="100" height="100" src="maygame1.jpg">
+                          <div id="ten"></div>
+                          <div id="gia"></div>
+                      </div>
+                      <div class="total">
+                          <div>Tổng cộng :</div>
+                          <div>0 đ</div>
+                      </div>
+                      <div class="chot">
+                          <button id="closefooter">Đóng</button>
+                          <button id="order">Thanh toán</button>
+                      </div>
+                </div>
+                </div>
+        </header>
+        <h1 class="td"><span class="fa fa-bars"></span>Các loại máy</h1>
+        <section>
+            <div class="itemn">
+                    <div class="cardt">
+                        <div>
+                        <img width="70%" onclick="thongbao(this)" src="maygame1.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">Máy game Nintendo Switch Với Neon Blue - v2</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">8.190.000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Phiên bản :</h6><div class="ttmay">V2 Pin trâu (Sản xuất 2020)</div>
+                                </li>
+                                <li>
+                                    <h6>Bảo hành :</h6><div class="ttmay">Cơ bản | Máy 12 tháng - Phụ kiện 3 tháng</div>
+                                </li>
+                                <li>
+                                    <h6>Hỗ trợ :</h6><div class="ttmay">TV mode - Tabletop mode - Handheld mode</div>
+                                </li>
+                                <li>
+                                    <h6>Màn hình :</h6><div class="ttmay">Cảm ứng 6.2 inch</div>
+                                </li>
+                                <li>
+                                    <h6>Bộ nhớ :</h6><div class="ttmay">32GB - Mở rộng qua MicroSD</div>
+                                </li>
+                                <li>
+                                    <h6>Pin :</h6><div class="ttmay">4.5 - 9 tiếng</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm1">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="70%" onclick="thongbao(this)" src="maygame2.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">Máy game sony PSP 3000</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">4.990.000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Phiên bản :</h6><div class="ttmay">Máy đã hack, miễn phí cop game khi bạn mua máy</div>
+                                </li>
+                                <li>
+                                    <h6>Bảo hành :</h6><div class="ttmay">Cơ bản | Máy 3 tháng</div>
+                                </li>
+                                <li>
+                                    <h6>Hỗ trợ :</h6><div class="ttmay">Wireless LAN, kết nối USB 2.0, thẻ nhớ Memory Stick PRO Duo, microphone, TV-out</div>
+                                </li>
+                                <li>
+                                    <h6>Màn hình :</h6><div class="ttmay">TFT 4.3-inch 16 triệu màu</div>
+                                </li>
+                                <li>
+                                    <h6>Bộ nhớ :</h6><div class="ttmay">Thẻ nhớ 8GB</div>
+                                </li>
+                                <li>
+                                    <h6>Pin :</h6><div class="ttmay">Lithium xịn</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm2">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="70%" onclick="thongbao(this)" src="maygame3.jpg">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">Máy game X7 8gb Psp</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">767.500 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Phiên bản :</h6><div class="ttmay">Cài Sẵn 9000 Trò Chơi GBA, SNES, GBC, PS1, PSP, Nitendo, X7 Mini - Chơi Game, Xem Phim - Tiếng Việt</div>
+                                </li>
+                                <li>
+                                    <h6>Bảo hành :</h6><div class="ttmay">Cơ bản | Máy 7 tháng</div>
+                                </li>
+                                <li>
+                                    <h6>Hỗ trợ :</h6><div class="ttmay">DC và DV, ghi âm, EBook, máy tính, lịch, đồng hồ bấm giờ, ghi âm, EBook. Painting, từ điển</div>
+                                </li>
+                                <li>
+                                    <h6>Màn hình :</h6><div class="ttmay">4,3 inch</div>
+                                </li>
+                                <li>
+                                    <h6>Bộ nhớ :</h6><div class="ttmay">8 GB, Hỗ Trợ thẻ TF, TV OUT, tập tin trình duyệt.</div>
+                                </li>
+                                <li>
+                                    <h6>Pin :</h6><div class="ttmay">Tích hợp pin sạc 1200 mah</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm3">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="70%" src="maygame4.jpg" onclick="thongbao(this)">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">Máy game Nintendo 3DS LL</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">1.800.000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Phiên bản :</h6><div class="ttmay">Phiên Bản 2016 Với Nhiều Cải Tiến 3D và Trải Nghiệm Chơi Games</div>
+                                </li>
+                                <li>
+                                    <h6>Bảo hành :</h6><div class="ttmay">Cơ bản | Máy 3 tháng</div>
+                                </li>
+                                <li>
+                                    <h6>Hỗ trợ :</h6><div class="ttmay">Wifi/div>
+                                </li>
+                                <li>
+                                    <h6>Màn hình :</h6><div class="ttmay">Trên 4,88 inch || Dưới 4,18 inch</div>
+                                </li>
+                                <li>
+                                    <h6>Bộ nhớ :</h6><div class="ttmay"> thẻ nhớ 32GB</div>
+                                </li>
+                                <li>
+                                    <h6>Pin :</h6><div class="ttmay">2000 mAh</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm4">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="70%" src="maygame5.jpg" onclick="thongbao(this)">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">Máy Chơi Game Cầm Tay SUP 400 Trò Chơi</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">200,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Phiên bản :</h6><div class="ttmay">400 trò chơi</div>
+                                </li>
+                                <li>
+                                    <h6>Bảo hành :</h6><div class="ttmay">Cơ bản | Máy 3 tháng</div>
+                                </li>
+                                <li>
+                                    <h6>Hỗ trợ :</h6><div class="ttmay">(none)</div>
+                                </li>
+                                <li>
+                                    <h6>Màn hình :</h6><div class="ttmay">3.0 inches</div>
+                                </li>
+                                <li>
+                                    <h6>Bộ nhớ :</h6><div class="ttmay">(none)</div>
+                                </li>
+                                <li>
+                                    <h6>Pin :</h6><div class="ttmay">1020mAh</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm5">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="70%" src="maygame6.jpg" onclick="thongbao(this)">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">Máy chơi game hđh Android Powkiddy X18</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">2,650,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Phiên bản :</h6><div class="ttmay">SoC – MediaTek MT8163 quad core Cortex A53 processor @ 1.3GHz với Arm Mali-T720 GPU</div>
+                                </li>
+                                <li>
+                                    <h6>Bảo hành :</h6><div class="ttmay">Cơ bản | Máy 12 tháng</div>
+                                </li>
+                                <li>
+                                    <h6>Hỗ trợ :</h6><div class="ttmay">WiFi 4 802.11 a/b/g/n, Bluetooth: 4.0</div>
+                                </li>
+                                <li>
+                                    <h6>Màn hình :</h6><div class="ttmay">5.5 inch</div>
+                                </li>
+                                <li>
+                                    <h6>Bộ nhớ :</h6><div class="ttmay">16GB eMMC flash, microSD card</div>
+                                </li>
+                                <li>
+                                    <h6>Pin :</h6><div class="ttmay">5,500 mAh Li-io</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm6">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="70%" src="maygame7.jpg" onclick="thongbao(this)">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">Nintendo New 3DS LL Limited Sun and Moon</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien"> 5,000,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Phiên bản :</h6><div class="ttmay">Phiên Bản 2016 Với Nhiều Cải Tiến 3D và Trải Nghiệm Chơi Games, Chép game chuyển vùng miễn phí</div>
+                                </li>
+                                <li>
+                                    <h6>Bảo hành :</h6><div class="ttmay">Cơ bản | Máy 3 tháng</div>
+                                </li>
+                                <li>
+                                    <h6>Hỗ trợ :</h6><div class="ttmay">Wifi/div>
+                                </li>
+                                <li>
+                                    <h6>Màn hình :</h6><div class="ttmay">Trên 4,88 inch || Dưới 4,18 inch</div>
+                                </li>
+                                <li>
+                                    <h6>Bộ nhớ :</h6><div class="ttmay"> thẻ nhớ 32GB</div>
+                                </li>
+                                <li>
+                                    <h6>Pin :</h6><div class="ttmay">2000 mAh</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm7">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+                    <div class="cardt">
+                        <div>
+                        <img width="70%" src="maygame8.jpg" onclick="thongbao(this)">
+                        </div>
+                        <div>
+                        <figcaption>
+                        <h4 class="fontmay">Combo Nintendo Switch Neon + Game Pokemon Let's go Eevee + gấu bông</h4>
+                        </figcaption>
+                        <div class="dieuchinh2">
+                            <div class="giatien">8,250,000 đ</div>
+                        </div>
+                        <div class="thongtin">
+                            <ul>
+                                <li>
+                                    <h6>Phiên bản :</h6><div class="ttmay">V2 Pin trâu (Sản xuất 2020)</div>
+                                </li>
+                                <li>
+                                    <h6>Bảo hành :</h6><div class="ttmay">Cơ bản | Máy 12 tháng - Phụ kiện 3 tháng</div>
+                                </li>
+                                <li>
+                                    <h6>Hỗ trợ :</h6><div class="ttmay">TV mode - Tabletop mode - Handheld mode</div>
+                                </li>
+                                <li>
+                                    <h6>Màn hình :</h6><div class="ttmay">Cảm ứng 6.2 inch</div>
+                                </li>
+                                <li>
+                                    <h6>Bộ nhớ :</h6><div class="ttmay">32GB - Mở rộng qua MicroSD</div>
+                                </li>
+                                <li>
+                                    <h6>Pin :</h6><div class="ttmay">4.5 - 9 tiếng</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chinhdathang"><a href="#"><div class="dathang" id="dathangm8">Đặt hàng</div></a><a></a></div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <footer>
+            <div class="foot">
+                <div>
+                    <ul>
+                        <li>Trường Đại học Mở TP.HCM</li>
+                        <li> Địa chỉ : 371 Nguyễn Kiệm Gò Vấp P.3 Quận Gò Vấp TP.Hồ Chí Minh</li>
+                        <li>E-mail:skullir4@gmail.com</li>
+                        <li>Hotline :0123456789</li>
+                    </ul>
+                </div>
+                <div> 
+                    <ul>
+                        <li>Kết nối với chúng tôi qua :</li>
+                        <li><img height="50px" src="https://yogadaily.com.vn/wp-content/uploads/2018/06/fb-icon.png"></li>
+                    </ul>
+                </div>
+                <div> 
+                    <ul>
+                        <li>Nhà tài trợ :</li>
+                        <li>Nguyễn Văn A</li>
+                        <li>Nguyễn Văn B</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
